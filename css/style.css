@@ -1,12 +1,12 @@
 :root {
-  --text-dark: #3F3D56;
-  --bg-color: #FBFBFB;
-  --btn-color: #00BFA6;
-  --text-white:#FFFF;
-  --text-green:#00BFA6;
-  --bg-green:#00AC95;
-  --font-1:  'Montserrat', sans-serif;
-  --font-2:  'Righteous', cursive;
+  --text-dark: #3f3d56;
+  --bg-color: #fbfbfb;
+  --btn-color: #00bfa6;
+  --text-white: #ffff;
+  --text-green: #00bfa6;
+  --bg-green: #00ac95;
+  --font-1: "Montserrat", sans-serif;
+  --font-2: "Righteous", cursive;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
@@ -22,7 +22,6 @@ a {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 /* Section Title */
 .section-title h1 {
@@ -43,7 +42,6 @@ a {
 }
 /* End Section title */
 
-
 /* Button Green */
 .btn-green {
   /* margin-top: 10px;
@@ -55,16 +53,64 @@ a {
   border-radius: 10px;
   font-family: var(--font-1);
   font-weight: var(--font-semi-bold);
-
 }
 .btn-green:hover {
   background-color: var(--bg-green);
   cursor: pointer;
 }
 .btn-green:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
   transition: 0.1s all;
 }
 /* End Button Green */
 
+/* footer ane */
+li {
+  list-style: none;
+}
+.footer {
+  /* Gantikan background-color ke #2f5167 */
+  background-color: var(--text-green);
 
+  /* Gantikan color ke #fff */
+  color: rgb(255, 255, 255);
+
+  /* Gantikan height ke 120px */
+  height: 120px;
+
+  /* Gantikan padding untuk semua sisi ke 40px */
+  padding: 60px;
+}
+.footer-logo {
+  font-family: var(--font-2);
+  font-weight: var(--font-semi-bold);
+  font-size: 26px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.footer-list {
+  float: right;
+  margin-top: -100px;
+  margin-right: 100px;
+}
+
+/* Tambahkan CSS untuk tag <li> kedalam footer-list */
+.footer-list li {
+  padding-bottom: 20px;
+  height: 11px;
+  font-family: var(--font-1);
+  font-size: 17px;
+  font-weight: 500;
+}
+.footer-bottom {
+  text-align: center;
+  font-family: var(--font-1));
+  background-color: #00ac95;
+  padding: 12px;
+  font-size: 14px;
+  color: #fbfbfb;
+  font-weight: lighter;
+}
