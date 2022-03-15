@@ -67,29 +67,6 @@ a {
 }
 /* End Button Green */
 
-/* About */
-.about .content-about {
-  /* border: 1px solid red; */
-  display: flex;
-}
-.about .content-about .description {
-  margin-left: 20px;
-}
-.about .content-about .description .text {
-  margin-top: 60px;
-  /* border: 1px solid red; */
-  font-size: 18px;
-  font-family: var(--font-1);
-  font-weight: var(--font-medium);
-}
-.about .content-about .description .btn-about {
-  /* border: 1px solid red; */
-
-  margin-top: 40px;
-}
-
-/* End About */
-
 /* Services */
 .services .content-services {
   display: flex;
