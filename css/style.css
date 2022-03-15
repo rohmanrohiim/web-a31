@@ -71,16 +71,9 @@ li {
   list-style: none;
 }
 .footer {
-  /* Gantikan background-color ke #2f5167 */
   background-color: var(--text-green);
-
-  /* Gantikan color ke #fff */
   color: rgb(255, 255, 255);
-
-  /* Gantikan height ke 120px */
   height: 120px;
-
-  /* Gantikan padding untuk semua sisi ke 40px */
   padding: 60px;
 }
 .footer-logo {
@@ -96,8 +89,6 @@ li {
   margin-top: -100px;
   margin-right: 100px;
 }
-
-/* Tambahkan CSS untuk tag <li> kedalam footer-list */
 .footer-list li {
   padding-bottom: 20px;
   height: 11px;
