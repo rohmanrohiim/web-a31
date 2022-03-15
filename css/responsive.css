@@ -1,0 +1,10 @@
+@media (max-width: 576px) {
+}
+
+/*applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+}
+
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+}
