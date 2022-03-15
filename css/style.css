@@ -68,3 +68,30 @@ a {
 /* End Button Green */
 
 
+/* .about  */
+.content-about{
+  /* border:1px solid rgb(255, 0, 0); */
+  display:flex;
+}
+
+/* .about  */
+.content-about .description{
+  margin-left:30px;
+}
+
+/* .about */
+ .content-about .description .text{
+  /* border:1px solid rgb(255, 0, 0); */
+  margin-top:60px;
+  font-size:18px;
+  font-family: var(--font-1);
+  font-weight: var(--font-medium);
+}
+
+/* .about  */
+.content-about .description .text .btn-about{
+  /* border:1px solid rgb(255, 0, 0); */
+  margin-top: 40px;
+}
+
+/* end about */
