@@ -1,8 +1,33 @@
 @media (max-width: 576px) {
+        .menu-toggle {
+            display: flex;
+        }
+        
+        nav ul {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20%;
+            height: 40vh;
+            
+            justify-content: space-evenly;
+            flex-direction: column;
+            box-shadow: inset -3px -3px 7px #00bfa6, 
+                        inset 3px 3px 5px #ceced1;
+            transform: translateX(100%);
+            transition: all 1.2s;
+        }
+  
+        nav ul.slide {
+            transform: translateX(0);
+        }
 }
 
 /*applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+    nav ul {
+        width: 30%;
+    }
 }
 
 /* applies to medium devices (tablets, less than 992px) */

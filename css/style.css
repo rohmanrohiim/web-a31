@@ -14,15 +14,113 @@
 body {
   margin: 0;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
 }
+
 .container {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
+/* Awal Navbar */
+nav {
+  display: flex;
+  font-family: var(--font-1);
+  font-size: 18px;
+  background-color: var(--bg-color);
+  justify-content: space-between;
+  padding: 15px 70px;
+  align-items: center;
+}
+
+nav .logo {
+  letter-spacing: 3px;
+  color: var(--text-green);
+  font-size: 36px;
+  font-weight: var(--font-bold);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--text-green);
+}
+
+/* Burger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Burger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+  background-color: var(--text-dark);
+}
+
+.menu-toggle span:nth-child(3) {
+  background-color: var(--text-dark);
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+  background-color: var(--text-dark);
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+  background-color: var(--text-dark);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+  background-color: var(--text-dark);
+}
+/* End Navbar */
+
+
 /* Section Title */
 .section-title h1 {
   margin-top: 117px;
@@ -32,6 +130,7 @@ a {
   color: var(--text-green);
   font-family: var(--font-1);
 }
+
 .section-title h2 {
   margin-top: -20px;
   font-weight: var(--font-bold);
@@ -66,6 +165,47 @@ a {
   transition: 0.1s all;
 }
 /* End Button Green */
+
+
+/* Hero Section*/
+#hero {
+  padding-top: 150px;
+  font-family: var(--font-1);
+}
+
+#hero .section-hero h1 {
+  font-weight: var(--font-bold);
+  font-size: 36px;
+  display: flex;
+  padding-left: 70px;
+}
+
+.content-hero .description .text h2 {
+  font-size: 24px;
+  font-weight: var(--font-medium);
+  margin-left: -15px;
+  width: 600px;
+  margin-top: -10px;
+}
+
+.content-hero .description {
+  display: flex;
+}
+
+
+.content-hero .description .text h2 span {
+  display: flex;
+}
+
+.container .content-hero .btn-hero {
+  margin-top: 80px;
+  margin-left: -600px;
+}
+
+.container .content-hero .img-hero {
+  margin-left: 350px;
+  margin-top: -100px;
+}
 
 /* .about  */
 .content-about {
@@ -134,6 +274,7 @@ a {
   font-weight: var(--font-medium);
 }
 /* End Services */
+
 .contact .form {
   margin-left: auto;
   margin-right: auto;
